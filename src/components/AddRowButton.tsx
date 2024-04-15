@@ -35,7 +35,7 @@ const AddRowButton = () => {
   };
 
   return (
-    <Button color="inherit" variant="text" onClick={handleRowAdd}>
+    <Button data-cy="add-row" color="inherit" variant="text" onClick={handleRowAdd}>
       + Añadir fila
     </Button>
   );

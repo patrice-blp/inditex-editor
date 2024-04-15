@@ -30,6 +30,7 @@ const Row = ({ row, index }: Props) => {
 
   return (
     <Stack
+      data-cy="grid-row"
       gap={1}
       padding={2}
       ref={ref}
@@ -40,7 +41,11 @@ const Row = ({ row, index }: Props) => {
         borderRadius: 1,
       }}
     >
-      <Stack direction="row" alignItems="center" justifyContent="space-between">
+      <Stack
+        direction="row"
+        alignItems="center"
+        justifyContent="space-between"
+      >
         <Typography color="dimgray">{row.name}</Typography>
         <Stack direction="row" alignItems="center" gap={1}>
           <SelectProductButton rowId={row.id} />

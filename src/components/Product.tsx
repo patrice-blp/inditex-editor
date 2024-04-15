@@ -62,6 +62,7 @@ const Product = ({ product, index, rowIdentifier, rowIndex }: Props) => {
       {!!product?.id && (
         <Box
           ref={ref}
+          data-cy="product"
           sx={{
             opacity,
             width: 150,
